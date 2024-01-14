@@ -130,8 +130,7 @@ struct CounterView: View {
 
 struct CounterPreview: PreviewProvider {
     static var previews: some View {
-        CounterView(
-            store: Store(initialState: CounterFeature.State()) {
+        CounterView(store: Store(initialState: CounterFeature.State()) {
                 CounterFeature()
             }
         )
