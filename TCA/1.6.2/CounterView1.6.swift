@@ -9,7 +9,7 @@ import SwiftUI
 import ComposableArchitecture
 
 @Reducer
-struct CounterFeature {
+struct CountersFeature {
     struct State: Equatable { // 변수 선언하는 곳
         var count = 0
         var fact: String?
@@ -79,8 +79,8 @@ struct CounterFeature {
     }
 }
 
-struct CounterView: View {
-    let store: StoreOf<CounterFeature>
+struct CountersView: View {
+    let store: StoreOf<CountersFeature>
     
     var body: some View {
         WithViewStore(self.store, observe: { $0 }) { viewStore in
@@ -130,8 +130,8 @@ struct CounterView: View {
 
 struct CounterPreview: PreviewProvider {
     static var previews: some View {
-        CounterView(store: Store(initialState: CounterFeature.State()) {
-                CounterFeature()
+        CountersView(store: Store(initialState: CountersFeature.State()) {
+                CountersFeature()
             }
         )
     }
