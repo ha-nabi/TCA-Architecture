@@ -11,14 +11,14 @@ import SwiftUI
 
 @main
 struct MyApp: App {
-    static let store = Store(initialState: AppFeature.State()) {
-        AppFeature()
+    static let store = Store(initialState: ContactsFeature.State()) {
+        ContactsFeature()
             ._printChanges()
     }
     
     var body: some Scene {
         WindowGroup {
-            AppView(store: MyApp.store)
+            ContactsView(store: MyApp.store)
         }
     }
 }
