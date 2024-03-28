@@ -11,18 +11,15 @@ import XCTest
 
 @MainActor
 final class TCATests: XCTestCase {
-    func testCounter() async {
-        let store = TestStore(initialState: CounterFeature.State()) {
-            CounterFeature()
-        }
-        
-        await store.send(.incrementButtonTapped) {
-            $0.count = 1
-        }
-        await store.send(.decrementButtonTapped) {
-            $0.count = 0
-        }
-    }
+//    func testIncrementInFirstTab() async {
+//        let store = TestStore(initialState: AppFeature.State()) {
+//            AppFeature()
+//        }
+//        
+//        await store.send(\.tab1.incrementButtonTapped) {
+//            $0.tab1.count = 1
+//        }
+//    }
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

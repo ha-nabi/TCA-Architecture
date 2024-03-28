@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6387D1E32B50FCDE00E9F07F /* TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387D1E22B50FCDE00E9F07F /* TCAApp.swift */; };
 		6387D1E52B50FCDE00E9F07F /* CounterView1.6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387D1E42B50FCDE00E9F07F /* CounterView1.6.swift */; };
 		6387D1E72B50FCE000E9F07F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6387D1E62B50FCE000E9F07F /* Assets.xcassets */; };
 		6387D1EA2B50FCE000E9F07F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6387D1E92B50FCE000E9F07F /* Preview Assets.xcassets */; };
@@ -15,6 +14,9 @@
 		6387D2282B51312200E9F07F /* TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387D2272B51312200E9F07F /* TCATests.swift */; };
 		63FA821D2BB40DEF006C136D /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FA821C2BB40DEF006C136D /* CounterFeature.swift */; };
 		63FA821F2BB40FDF006C136D /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FA821E2BB40FDF006C136D /* CounterView.swift */; };
+		63FA82222BB533E7006C136D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FA82212BB533E7006C136D /* AppView.swift */; };
+		63FA82242BB5343F006C136D /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FA82232BB5343F006C136D /* AppFeature.swift */; };
+		63FA82262BB53679006C136D /* TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387D1E22B50FCDE00E9F07F /* TCAApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		63FA821C2BB40DEF006C136D /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		63FA821E2BB40FDF006C136D /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		63FA82202BB41639006C136D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		63FA82212BB533E7006C136D /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		63FA82232BB5343F006C136D /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 			children = (
 				63FA821E2BB40FDF006C136D /* CounterView.swift */,
 				63FA821C2BB40DEF006C136D /* CounterFeature.swift */,
+				63FA82212BB533E7006C136D /* AppView.swift */,
+				63FA82232BB5343F006C136D /* AppFeature.swift */,
 			);
 			path = 1.9.2;
 			sourceTree = "<group>";
@@ -184,7 +190,7 @@
 				};
 			};
 			buildConfigurationList = 6387D1DA2B50FCDE00E9F07F /* Build configuration list for PBXProject "TCA" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -229,9 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63FA82262BB53679006C136D /* TCAApp.swift in Sources */,
+				63FA82242BB5343F006C136D /* AppFeature.swift in Sources */,
 				63FA821D2BB40DEF006C136D /* CounterFeature.swift in Sources */,
+				63FA82222BB533E7006C136D /* AppView.swift in Sources */,
 				6387D1E52B50FCDE00E9F07F /* CounterView1.6.swift in Sources */,
-				6387D1E32B50FCDE00E9F07F /* TCAApp.swift in Sources */,
 				63FA821F2BB40FDF006C136D /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -364,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
