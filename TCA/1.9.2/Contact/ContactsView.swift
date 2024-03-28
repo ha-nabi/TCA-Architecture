@@ -15,10 +15,21 @@ struct ContactsView: View {
         NavigationStack {
             List {
                 ForEach(store.contacts) { contact in
-                    Text(contact.name)
+                    HStack {
+                        Text(contact.name)
+                        
+                        Spacer()
+                        
+                        Button {
+                            store.send(.deleteButtonTapped(id: contact.id))
+                        } label: {
+                            Image(systemName: "trash")
+                                .foregroundColor(.red)
+                        }
+                    }
                 }
             }
-            .navigationTitle("Contacts")
+            .navigationTitle("연락처")
             .toolbar {
                 ToolbarItem {
                     Button {
@@ -36,6 +47,7 @@ struct ContactsView: View {
                 AddContactView(store: addContactStore)
             }
         }
+        .alert($store.scope(state: \.alert, action: \.alert))
     }
 }
 

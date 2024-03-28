@@ -13,15 +13,16 @@ struct AddContactView: View {
     
     var body: some View {
         Form {
-            TextField("Name", text: $store.contact.name.sending(\.setName))
+            TextField("이름", text: $store.contact.name.sending(\.setName))
+                .autocorrectionDisabled()
             
-            Button("Save") {
+            Button("저장") {
                 store.send(.saveButtonTapped)
             }
         }
         .toolbar {
             ToolbarItem {
-                Button("Cancel") {
+                Button("취소") {
                     store.send(.cancelButtonTapped)
                 }
             }
